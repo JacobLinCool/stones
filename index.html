@@ -12,31 +12,31 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav mr-auto">
                 </ul>
             </div>
         </nav>
         <div class="wrapper">
-          <legend>免費魔法石</legend>
-          <div class="form-group row">
-            <label for="staticEmail" class="col-sm-2 col-form-label">UID: </label>
-            <div class="col-sm-10">
-              <input type="text" readonly="" class="form-control-plaintext" id="staticEmail">
+            <div class="form">
+                <fieldset>
+                    <legend>免費魔法石</legend>
+                    <div class="form-group">
+                        <label for="up-name">UID</label>
+                        <input type="text" class="form-control" id="up-name" placeholder="Your UID">
+                    </div>
+                    <div class="form-group">
+                        <label for="up-email">魔法石數量</label>
+                        <input type="text" class="form-control" id="up-email" placeholder="Stones">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="Swal.fire('成功','','success')">送出</button>
+                </fieldset>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="static1" class="col-sm-2 col-form-label">魔法石</label>
-            <div class="col-sm-10">
-              <input type="text" readonly="" class="form-control-plaintext" id="static1">
-            </div>
-          </div>
-          <button type="button" class="btn btn-primary" onclick="Swal.fire('成功','','success')">送出</button>
         </div>
         <!-- Main Body End -->
     </div>
-
+    
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
